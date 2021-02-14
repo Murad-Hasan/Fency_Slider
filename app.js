@@ -114,6 +114,13 @@ const createSlider = () => {
     const spinner = document.getElementById('loading-spinner');
     spinner.classList.toggle('d-none')
     
+    changeSlide(0)
+      slideToggleSpinner()
+      timer = setInterval(function () {
+        slideIndex++;
+        changeSlide(slideIndex);
+      }, duration);
+    
   }
 
 }
