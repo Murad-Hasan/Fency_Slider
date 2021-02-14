@@ -119,7 +119,7 @@ const createSlider = () => {
       timer = setInterval(function () {
         slideIndex++;
         changeSlide(slideIndex);
-      }, duration);
+      }, 1000);
     
   }
 
